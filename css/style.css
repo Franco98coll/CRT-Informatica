@@ -162,6 +162,8 @@ body{
 /* OFRECEMOS */
 
 .ofrecemos{
+    position: relative;
+    z-index: 100;
     font-family: 'Manrope', sans-serif;
     background-color: #0D0D0D;
     color: #ffffff;
@@ -325,7 +327,17 @@ body{
     color: #ffffff;
 }
 .gal{
-    margin-top: -100px;
+    position: relative;
+    z-index: 10000;
+    background-color: #0D0D0D;
+}
+.galeria-div{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 .galeria{
     width: 700px;
@@ -337,9 +349,6 @@ body{
     background-color: #202124;
     padding: 20px;
     border-radius: 20px;
-    margin-left: -350px;
-    margin-bottom: 50px;
-    margin-top: -700px;
 }
 .galeria:hover{
     transition: ease-in-out 1s;
